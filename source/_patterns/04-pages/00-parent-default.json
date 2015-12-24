@@ -1,0 +1,24 @@
+{
+	"sidebar-title":"Parents",
+	"hero-image":"main-parents.jpg",
+	"hero-paragraph":"After a few clicks, you will be able to view profiles of child care providers in your area. Profiles include pictures, hours of operation, ages accepted, vacancies, licensing history, quality indicators and more.",
+	"nav-links":[
+		{"name":"Top Ten Resources"},
+		{"name":"Why Quality Matters"},
+		{"name":"Steps to Choosing Care"},
+		{"name":"Need Help / Give Feedback"},
+		{"name":"Cost of Care"},
+		{"name":"Register"},
+		{"name":"Search for Care"},
+		{"name":"View Us on YouTube"},
+		{"name":"CAC Quality Indicators"},
+		{"name":"Parent Newsletter"},
+		{"name":"Take our short survey"},
+		{"name":"Log In"}
+	],
+	"triple-banner":[
+		{"className": "first", "header": "Parenting Classes", "p":"Upcoming Parenting / Relationship Classes" },
+		{"className": "second", "header": "Unemployed?", "p":"Need Help Paying for Child Care" },
+		{"className": "last", "header": "Paying for Childcare", "p":"Do you need help paying for childcare?" }
+	]
+}

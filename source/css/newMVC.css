@@ -1,0 +1,378 @@
+﻿/*----- Shared -----*/
+label[for]:after {
+    content: ":";
+}
+.c {
+    text-align: center;
+}
+.b {
+    font-weight: bold;
+}
+.i {
+    font-style: italic;
+}
+.red {
+    color:#A22;
+}
+a.btn {
+    font-weight:bold;
+    font-size:0.85em;
+    margin:0 3px;
+    outline:none;
+}
+.w200 label {
+    width: 200px;
+    display:block;
+    float:left;
+    text-align:right;
+    padding-right:2px;
+}
+.w200 input[type=text],
+.w200 input[type=password],
+.w200 input[type=date]
+{
+    width: 200px;
+    height:21px;
+}
+.w200 .col {
+    float: left;
+    width:200px;
+    min-height:24px;
+}
+.w200 select {
+    max-width: 100%;
+}
+.w200 textarea {
+    width: 602px;
+    height: 5.25em;
+}
+.fullWidth {
+    width: 602px !important;
+}
+.clickable:hover {
+    background-color: #CFDEFF !important;
+    cursor: pointer;
+}
+.c65 {
+    margin: auto;
+    width: 65%;
+}
+.c75 {
+    margin: auto;
+    width: 75%;
+}
+.noSelect {
+    /* Don't allow selected text highlighting */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+/*----- Administration -----*/
+select.lbMainDisplay[size] {
+    width: 450px;
+    height: 150px;
+}
+
+
+/*----- Reports -----*/
+h4 {
+    text-align: center;
+}
+table.report {
+    font-size:12px;
+    border-collapse:collapse;
+    margin:2.5em 0;
+    width:100%;
+}
+table.report, table.report th, table.report td {
+    border: solid 1px;
+    padding:1px 3px;
+}
+table.report thead tr:first-child {
+    font-size:16px;
+}
+table.report thead tr:last-child th {
+    text-align:center;
+    vertical-align:bottom;
+}
+
+
+/*----- Validation -----*/
+.field-validation-error{color: #ff0000;}
+.input-validation-error{border: 1px solid #ff0000; background-color: #ffeeee;}
+.validation-summary-errors {
+    color: #cc0000;
+    text-align:center;
+    font-weight:bold;
+    padding:10px;
+}
+.validation-summary-errors ul {
+    list-style: none;
+    margin-bottom:.5em;
+}
+
+
+/*----- Search Index Page -----*/
+.basicSearch {
+    margin-top: 150px;
+    text-align:center;
+}
+#txtSearch {
+    font-size: 1.2em;
+    width: 40%;
+    padding:1px 2px;
+    border-color:#AAAAAA;
+    border-radius:3px 0 0 3px;
+    height:28px;
+    margin-right:-5px;
+}
+input {
+}
+input.smInt {
+    width:30px;
+}
+input.date {
+    width: 75px;
+}
+select[multiple], .maxWidth {
+    width:225px;
+}
+.searchOpt, .advSearch {
+    margin-top:10px;
+}
+.advSearchLink, .searchAddBtn {
+}
+
+
+/*----- Search Results Page -----*/
+#tblList tr[data-ID]:hover {
+    background-color:#CFDEFF !important;
+    cursor:pointer;
+}
+#tblList tr.selected td:nth-child(2) {
+    font-weight:bold;
+    text-decoration:underline;
+}
+#tblList td[title]:nth-child(1) {
+    display:block;
+    height:20px;
+    width:25px;
+    overflow:hidden;
+    margin-top:1px;
+}
+#tblList td:nth-child(1) img {
+    position:relative;
+    margin:auto;
+}
+#tblList td:nth-child(1)[title=Facility] img {
+}
+#tblList td:nth-child(1)[title=Organization] img {
+    top:-20px;
+}
+#tblList td:nth-child(1)[title=User] img {
+    top:-40px;
+}
+#tblList td:nth-child(1)[title=Parent] img {
+    top:-60px;
+}
+#tblList td:nth-child(1)[title=Training] img {
+    top:-80px;
+}
+#tblList td:nth-child(1)[title=Caregiver] img {
+    top:-100px;
+}
+.noShow {
+    display: none;
+}
+
+/* DataTables.js CSS */
+.dataTables_wrapper {
+    width:800px;
+    margin:30px auto;
+}
+.dataTables_length {
+    float:left;
+}
+.dataTables_filter {
+    float:right;
+}
+.dataTables_filter input {
+    margin-right: 0;
+}
+.dataTables_wrapper table {
+    border:solid 1px;
+    width:100%;
+    margin:0;
+    clear:both;
+}
+.dataTables_wrapper tr {
+    height:22px;
+}
+.dataTables_wrapper tr:nth-child(2n+2) {
+    background-color:#CCCCCC;
+}
+.dataTables_info {
+    float:left;
+}
+.dataTables_paginate {
+    float: right;
+}
+.paginate_button.disabled {
+    display:none;
+}
+.paginate_button.current {
+    font-weight: bold;
+}
+.dataTables_paginate a {
+    cursor:pointer;
+    padding-right:5px;
+
+    /* Avoid selected text highlighting */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+td.dataTables_empty {
+    color:#777;
+    display:table-cell;
+    font-style:italic;
+    text-align:center;
+}
+
+
+#recordView {
+    background-color:#C6DA2D;
+}
+#sidebarRecords {
+    width: 98px;
+    margin:0 1px;
+    overflow-x: hidden;
+    height: 100%;
+    float:left;
+}
+#mainRecord {
+    width: 860px;
+    min-height: 540px;
+    float:left;
+    background-color:#EFEFEF;
+    padding:5px;
+}
+#backToResults {
+    position: absolute;
+    top: 25px;
+    padding:5px;
+}
+
+/* Tabs */
+.ui-tabs ul {
+    clear: both;
+    width:65%;
+    margin:20px auto;
+    text-align:center;
+}
+.ui-tabs ul > li {
+    display:inline;
+    white-space:nowrap;
+}
+.ui-tabs ul a {
+    outline: none;
+    color:#444;
+    font-size:12px;
+    font-weight:bold;
+    margin:0 15px;
+}
+
+
+/*----- Search Partials -----*/
+#facilityTabs > div:after {
+    clear: both;
+}
+fieldset table {
+    width: 100%;
+    margin:0 auto;
+}
+table thead th {
+    text-align: center;
+}
+fieldset table td {
+    text-align: center;
+}
+#workHistory td:nth-child(1) {
+    text-align: left;
+}
+table .noTrainings td {
+    font-style: italic;
+    text-align: center !important;
+}
+table.majorContent {
+    margin:15px auto 0;
+    width:95%;
+}
+table.majorContent td, table.majorContent th {
+    text-align: center;
+}
+.tblClassesHdr {
+    text-align:center;
+    margin:2px 0 -2px;
+}
+.smTable {
+    white-space:nowrap;
+    font-size:8pt;
+    width:90%;
+    margin:auto;
+    border:solid 1px;
+}
+.smTable thead,
+.smTable tfoot {
+    border:solid 1px;
+}
+.smTable td {
+    text-align: center;
+    padding:0 3px;
+}
+.smTable tbody tr.even {
+    background-color:#CCC;
+}
+.smTable td:nth-child(1) {
+    text-align: left;
+}
+.smTable .usedClass {
+    font-style: italic;
+    color:#777;
+}
+.smTable tbody .old {
+    color: #A22;
+}
+#trainingCategoryLegend {
+	cursor:pointer;
+	border:solid 1px;
+	background-color:#FFF;
+	opacity:.9;
+	padding:3px;
+	font-size:.9em;
+    text-align:left;
+    padding:5px;
+}
+#trainingCategoryLegend .abb {
+	float:left;
+	width:50px;
+	text-align:center;
+}
+.smRightLinks {
+    position:absolute;
+    right:0;
+    text-align:right;
+    padding:0 10px;
+    font-size:0.8em;
+}
+
+/*-----  -----*/

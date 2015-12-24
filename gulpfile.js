@@ -7,7 +7,7 @@ var pkg = require('./package.json'),
     strip_banner = require('gulp-strip-banner'),
     header = require('gulp-header'),
     nodeunit = require('gulp-nodeunit'),
-		//sass = require('gulp-sass'),
+		sass = require('gulp-sass'),
     browserSync = require('browser-sync').create();
 
 require('gulp-load')(gulp);
@@ -65,15 +65,15 @@ gulp.task('cp:img', function(){
     .pipe(gulp.dest('./public/images'))
 });
 gulp.task('cp:font', function(){
-  return gulp.src('*', {cwd:'./source/fonts'})
-    .pipe(gulp.dest('./public/fonts'))
+  return gulp.src('*', {cwd:'./source/css/fonts'})
+    .pipe(gulp.dest('./public/css/fonts'))
 });
 gulp.task('cp:data', function(){
   return gulp.src('annotations.js', {cwd:'./source/_data'})
     .pipe(gulp.dest('./public/data'))
 })
 gulp.task('cp:css', function(){
-  return gulp.src('./source/css/style.css')
+  return gulp.src('./source/css/*.css')
     .pipe(gulp.dest('./public/css'))
     .pipe(browserSync.stream());
 })
@@ -85,10 +85,10 @@ gulp.task('connect', ['lab'], function(){
       baseDir: './public/'
     }
   });
-  gulp.watch('./source/css/style.css', ['cp:css']);
+  gulp.watch('./source/css/*.css', ['cp:css']);
 
   //suggested watches if you use scss
-  // gulp.watch('./source/css/**/*.scss', ['sass:style']);
+  gulp.watch('./source/css/**/*.scss', ['sass:style']);
   // gulp.watch('./public/styleguide/*.scss', ['sass:styleguide']);
 
   gulp.watch([
@@ -107,16 +107,16 @@ gulp.task('nodeunit', function(){
     .pipe(nodeunit());
 })
 
-//sass tasks, turn on if you want to use
-// gulp.task('sass:style', function(){
-// 	return gulp.src('./source/css/*.scss')
-// 		.pipe(sass({
-// 			outputStyle: 'expanded',
-// 			precision: 8
-// 		}))
-// 		.pipe(gulp.dest('./public/css'))
-//     .pipe(browserSync.stream());
-// })
+// sass tasks, turn on if you want to use
+gulp.task('sass:style', function(){
+	return gulp.src('./source/css/*.scss')
+		.pipe(sass({
+			outputStyle: 'expanded',
+			precision: 8
+		}))
+		.pipe(gulp.dest('./public/css'))
+    .pipe(browserSync.stream());
+})
 // gulp.task('sass:styleguide', function(){
 // 	return gulp.src('./public/styleguide/css/*.scss')
 //  		.pipe(sass({
@@ -134,7 +134,7 @@ gulp.task('lab-pipe', ['lab'], function(cb){
 
 gulp.task('default', ['lab']);
 
-gulp.task('assets', ['cp:js', 'cp:img', 'cp:font', 'cp:data', /*'sass:style', 'sass:styleguide'*/]);
+gulp.task('assets', ['cp:js', 'cp:img', 'cp:font', 'cp:data', 'sass:style', /*'sass:styleguide'*/]);
 gulp.task('prelab', ['clean', 'banner', 'assets']);
 gulp.task('lab', ['prelab', 'patternlab'], function(cb){cb();});
 gulp.task('patterns', ['patternlab:only_patterns']);

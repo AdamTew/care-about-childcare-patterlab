@@ -30,7 +30,13 @@
  		"tools-docs": true
  	},
   "patternStates": {
-	  "homepage-emergency" : "inprogress"
+	  "homepage-emergency" : "inprogress",
+	  "color" : "inprogress",
+
+	  "parent-default" : "inprogress",
+	  "provider-default" : "inprogress",
+	  "resources-default" : "inprogress",
+	  "contact" : "inprogress"
   },
   "patternExportKeys": [],
   "patternExportDirectory": "./pattern_exports/",

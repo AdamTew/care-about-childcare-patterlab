@@ -1,0 +1,23 @@
+{
+	"sidebar-title":"Resources",
+	"hero-image":"main-resources.jpg",
+	"hero-paragraph":"Valuable links for everyone who Cares About Childcare, Child Development, Early Childhood Education, School Readiness, Nutrition and many more. Click on the links to the left to get started.",
+	"nav-links":[
+		{"name":"Caregiver Guidelines"},
+		{"name":"Child Development"},
+		{"name":"Child Health &amp; Safety"},
+		{"name":"Community Support"},
+		{"name":"Food &amp; Nutrition"},
+		{"name":"School Readiness"},
+		{"name":"Upcoming Training"},
+		{"name":"Summer Activity Guides"},
+		{"name":"Head Start"},
+		{"name":"Utah Afterschool Network"},
+		{"name":"Log In"}
+	],
+	"triple-banner":[
+		{"className": "first", "header": "Affordable Care Act", "p":"Information on Health Insurance (PDF)" },
+		{"className": "second", "header": "Top Ten Resources", "p":"&Utah's Human Service Programs" },
+		{"className": "last", "header": "Help Me Grow", "p":"Free Screenings for 0 to 5 year olds" }
+	]
+}

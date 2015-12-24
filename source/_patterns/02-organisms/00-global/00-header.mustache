@@ -1,9 +1,11 @@
-<!-- Begin .header -->
-<header class="header cf" role="banner">
-	{{> atoms-logo }}
-	<a href="#" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">Search</span></a>
-	<a href="#" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
-	{{> molecules-primary-nav }}
-	{{> molecules-search }}
-</header>
-<!-- End .header -->
+<div id="header">
+	<h2 id="logo"><a href="/">Care About Childcare</a></h2>
+	<div id="main-nav">
+		<ul>
+			<li id="nav-parents"><a id="ctl00_linkMainNavParents" href="{{ link.pages-parent-default }}">Parents</a></li>
+			<li id="nav-providers"><a id="ctl00_linkMainNavProviders" href="{{ link.pages-provider-default }}">Providers</a></li>
+			<li id="nav-resources"><a href="{{ link.pages-resources-default }}">Resources</a></li>
+			<li id="nav-contact"><a href="{{ link.pages-contact }}">Contact</a></li>
+		</ul>
+	</div>
+</div>

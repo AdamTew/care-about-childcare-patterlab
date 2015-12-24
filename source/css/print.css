@@ -1,0 +1,50 @@
+﻿@media print {
+    @page {
+        margin: 0.5cm;
+    }
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        text-shadow: none;
+    }
+    header, nav#admin-nav, .sidebar, #header, div#footer, 
+    #sidebarRecords, #backToResults, .ui-tabs-nav, #btnSave {
+        display: none;
+    }
+    div.container, .content, #mainRecord {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    a, a:visited {
+        color: #000 !important;
+        text-decoration: underline;
+    }
+    pre, blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    img {
+        page-break-inside: avoid;
+    }
+    p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2, h3 {
+        page-break-after: avoid;
+    }
+    table {
+        -webkit-print-color-adjust: exact;
+    }
+
+    /*----- Reports -----*/
+    table.report {
+        font-size:0.9em;
+    }
+
+    /*----- Record Search Results -----*/
+    #sidebarRecords {
+        height:auto !important;
+    }
+}

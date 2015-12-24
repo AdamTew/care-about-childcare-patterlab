@@ -1,0 +1,39 @@
+* {
+  background: #fff;  /* As much contrast as possible */
+  color: #000;
+}
+
+/* Make top navigation a bit larger */
+#main-nav {
+    font-size:16px;
+}
+
+/* Make the sidebar text a bit larger */
+.sidebar {
+    width:300px;
+    font-size:1.3em;
+}
+.sidebar ul li {
+    line-height:1.95em;
+}
+.content {
+    width:620px;
+}
+.content .left-image {
+    margin-left:-60px;
+}
+
+.banners div {
+    height:100%;
+}
+
+/* Hide the bottom navigation (prevent accidental clicks) */
+#footer {
+    text-align:center;
+}
+.copyright {
+    padding-right:0;
+}
+#footer-nav {
+    display:none;
+}
